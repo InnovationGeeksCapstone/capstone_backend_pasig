@@ -22,7 +22,7 @@ exports.createReportToBarangay = async (req, res, next) => {
 
         // Format the report number to have leading zeros
         const formattedReportNumber = reportNumber.toString().padStart(6, '0');
-        const reportId = `BC${formattedReportNumber}`;
+        const reportId = formattedReportNumber;
 
         let UserReportNumber = 1;
         if (latestReportNumber && latestReportNumber.report_number !== undefined) {
