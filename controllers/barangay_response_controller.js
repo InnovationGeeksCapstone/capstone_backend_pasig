@@ -19,7 +19,7 @@ exports.createBarangayReport = async (req, res, next) => {
         }
 
         // Format the responseId to have leading zeros
-        const formattedResponseId = responseId.toString().padStart(15, '0');
+        const formattedResponseId = responseId.toString().padStart(6, '0');
 
         const defaultRecipient = "Pasig Dengue Task Force";
 

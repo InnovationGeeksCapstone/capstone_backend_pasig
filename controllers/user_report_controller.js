@@ -24,7 +24,7 @@ exports.createUserReport = async (req, res, next) => {
         }
 
         // Format the report number to have leading zeros
-        const formattedReportNumber = reportNumber.toString().padStart(15, '0');
+        const formattedReportNumber = reportNumber.toString().padStart(6, '0');
         const reportId = formattedReportNumber;
 
         let UserReportNumber = 1;
